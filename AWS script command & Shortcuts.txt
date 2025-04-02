@@ -1,0 +1,81 @@
+Automation - process were you need to reduce the manual activity
+
+
+ls - list the files & folders
+pwd - present working directory
+cd - change directory
+ls -ltr - list the files & folders with it's property (timestamp)
+touch - create a file
+vi - create and open file
+	press esc  and press i
+	i - insert mode
+	"after write a sentence"
+	press esc
+	v - visual mode
+:wq! - Save and close file
+:q! - close the file
+cat - print the file lines
+rm - remove file
+rm -r - remove directory
+rm -rf - remove directory and files
+rmdir - remove directory
+free - server memory 
+free -g - server size
+nproc - number of processer
+df -h - disk size 
+top - server related things monitor purpose (real-time monitor) 
+man - manual information
+history - history of commends what we are written
+chmod - change file permission
+mkdir - make dir
+
+ps -ef - what all are the process (bg/ demon/ zombie) are runing
+ps -ef | grep "process name" - filter the particular process and we can take the id 
+grep - filter
+date - show the current date
+awk - pattern scanning and processing language
+awk -F" " '{print $column_number or index_number}' - show only particular column
+curl - retrives the information from internet
+wget - download | store the information from internet
+sudo find / -name file_name - find the file path of the file
+sudo su - => Change normal user into admin user
+trap - trapping the signals
+kill - kill the process_id / process_name (kill -9 process_name/id)
+ls -a - listout all the files and folders
+cd ~ - home directory
+cp - copy a file  from file1 to file2
+cp -r - copy a folder similar to copy a file
+mv - move a file (file1 file2) or (file1 filepath/file2)
+chown - change the file ownership
+whoami - show the current logged in user
+tac - view the file in reverse order
+less - view file page by page
+head -n number_of_line - view first  to number of line 
+tail -n number_of_line - view last to number of line
+chmod +x - executable file permission
+htop - intractive process viewer
+
+set -x - debug mode
+set -e - exit the script while error occures
+set -o pipefail - exit the script while pipe failure occures
+
+shell script
+
+#!/bin/ [bash | dash | sh | ksh] 
+
+bash - most commenly use
+
+for i in {1..5};
+do
+#"your own logic" ;
+cp -r folder1 folder$i;
+
+done
+
+
+if [expression]
+then
+# "your logic"
+else
+# "your logic"
+fi
