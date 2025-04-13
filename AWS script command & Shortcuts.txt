@@ -54,6 +54,14 @@ head -n number_of_line - view first  to number of line
 tail -n number_of_line - view last to number of line
 chmod +x - executable file permission
 htop - intractive process viewer
+du -sh - show the folder size
+who - show logged-in user
+locate - locate the file path (plocate need to install)
+adduser - while using use sudo previlages to create a new user
+passwd - change the password
+deluser - delete the user
+
+
 
 set -x - debug mode
 set -e - exit the script while error occures
@@ -79,3 +87,39 @@ then
 else
 # "your logic"
 fi
+
+
+# repo 
+
+https://raw.githubusercontent.com/iam-veeramalla/sandbox/refs/heads/main/log/dummylog01122022.log
+
+
+https://docs.aws.amazon.com/cli/latest/reference/
+
+
+
+
+aws cli
+
+
+sudo apt install python3-venv -y
+python3 -m venv awscli-venv
+source awscli-venv/bin/activate
+pip install awscli
+aws --version
+
+
+aws configure
+
+Access key
+Secret access key
+Region
+file type
+
+aws s3 ls
+
+aws ec2 describe-instances
+
+aws lambda list-functions
+
+aws iam list-users
